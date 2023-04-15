@@ -1,0 +1,59 @@
+    
+.filter {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: -17px;
+    margin-bottom: 10px;
+  }
+  .filter .icon {
+    font-size: 30px;
+    text-align: center;
+  }
+  .filter .filter_window {
+    position: absolute;
+    z-index: 10;
+    width: 300px;
+    background-color: #ffffff;
+    top: 50px;
+    -webkit-box-shadow: 0px 6px 24px -2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 6px 24px -2px rgba(34, 60, 80, 0.2);
+  }
+  .filter .filter_window p {
+    height: 30px;
+    margin-top: 20px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .filter .filter_window p:hover {
+    font-weight: 600;
+  }
+  .filter .filter_div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 200ms ease;
+    transition: 200ms ease;
+  }
+  .filter .filter_div:hover {
+    /* transform: scale(1.1); */
+    cursor: pointer;
+    color: #109061;
+  }
+  .filter span {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
