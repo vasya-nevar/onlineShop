@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@600&family=Montserrat:wght@300;600&family=Special+Elite&display=swap");
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #fff;
+  color: #222;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app {
+  width: 1280px;
+  margin: 50px auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.app .header_presentation {
+  margin: 50px auto;
+  background: url("./fon1.jpg");
+  width: 100%;
+  height: 500px;
+  background-size: cover; /* фиксированый размер? */
+  background-repeat: no-repeat; /* не повторяется изображение */
+  background-position: bottom center;
+  background-blend-mode: multiply; /* теперь можем наложить цвет поверх изображения */
+  background-color: #bcbcbc;
+  position: relative;
+}
+.app .header_presentation::after {
+  content: "Лучшие товары для вашего дома";
+  position: absolute; /* так как у родителя relative то абсолютное позиуионирование идиет относительно родителя*/
+  left: 50px;
+  top: 100px;
+  width: 300px;
+  width: 300px;
+  font-size: 40px;
+  font-weight: 600;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app .header_presentation::before {
+  content: "по низким ценам";
+  position: absolute;
+  left: 50px;
+  top: 250px;
+  width: 300px;
+  width: 300px;
+  font-size: 15px;
+  font-weight: 300;
+  color: white;
 }
